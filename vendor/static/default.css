@@ -1,0 +1,214 @@
+    * {
+        margin: 0;
+        padding: 0;
+
+    }
+
+    body {
+        background: linear-gradient(to bottom, #ff6600, #ffffff);
+    }
+
+
+    .logo {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        cursor: pointer;
+        background-color: #ffffff;
+        transition: linear .2s;
+    }
+
+    .logo:hover{
+        transform: scale(1.05);
+
+    }
+
+    header {
+        position: absolute;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        position: absolute;
+        top: 0;
+        background-color: #131921;
+        height: 11%;
+        width: 100%;
+
+    }
+
+    body {
+        height: 100vh;
+    }
+
+    .img3 {
+        padding: 20px 0px 0px 40px;
+        height: 50px;
+        width: 90px;
+        position: absolute;
+
+    }
+
+    .a {
+        text-decoration: none;
+       
+        display: inline-block;
+        position: absolute;
+        color: #ffffff;
+        transition: linear .1s;
+    }
+
+    a{
+        text-decoration: none;
+        color: black;
+    }
+    .a:hover {
+        color: #ff6600;
+        transform: scale(1.07);
+    }
+
+    .home {
+        margin: 35px 0px 0px 1100px;
+    }
+
+    .back{
+        /* position: absolute; */
+        top: 10px;
+        height: 1000px;
+        width: 220vh;
+        margin-top: 60px;
+        margin-left: -50px;
+        z-index: 0;
+    }
+
+    .vendor {
+        margin: 0px 0px 0px 1250px;
+    }
+
+    .admin {
+        margin: 0px 0px 0px 1400px;
+    }
+
+    .img2 {
+        padding: 40px 0px 0px 0px;
+        height: 600px;
+        width: 1555px;
+        position: absolute;
+        margin-top: 50px;
+    }
+
+    
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    body .bg {
+        z-index: 1;
+        padding: 0;
+        margin-top: -320px;
+        height: 100%;
+        width: 100%;
+        
+    }
+
+    
+
+
+
+    .box {
+        z-index: 10;
+        
+        list-style: none;
+        
+        border-radius: 5px;
+        border: none;
+        margin: 20px 30px 0px 60px;
+        background-color: white;
+        padding: 10px 150px 10px 20px;
+        width: 220px;
+        
+        text-align: center;
+        box-shadow: 0 3px 18px rgba(65, 61, 61);
+    }
+
+    .box:hover {
+        transform: translateY(-5px);
+        box-shadow: 0px 6px 15px black;
+    }
+
+    .box img {
+        width: 150px;
+        height: 150px;
+        border-radius: 8px;
+        padding: 0px 0px 0px 0px;
+    }
+
+    .name {
+        font-weight: bold;
+        margin: 10px 0;
+        padding-left: 100px;
+        text-align: center;
+    }
+
+    .price {
+        color: rgb(1, 1, 1);
+        font-size: 18px;
+        margin-top: 8px;
+        padding: 180px 0px 30px 100px;
+    }
+
+    .ul{
+        margin-top: -700px;
+        z-index: 10000;
+        /* flex-direction: column; */
+        position: absolute;
+        border: 2px solid rgb(252, 235, 235);
+        background-color: white;
+        
+    }
+
+    .photo{
+        height: 20%;
+    }
+
+    /* 1. Adjust the product image size */
+.ul ul li .direct .phone {
+    /* Set a maximum width for the image. 
+       Use a percentage of the parent container or a fixed pixel value. */
+    max-width: 100%; /* Ensures the image doesn't overflow its container */
+    max-height: 250px; /* Set a reasonable maximum height */
+    width: auto; /* Maintain the image's aspect ratio */
+    height: auto; /* Maintain the image's aspect ratio */
+    display: block;
+    margin: 10px auto; /* Centers the image and adds vertical space */
+}
+
+/* 2. Adjust the product container size */
+.ul ul li {
+    /* Set a fixed or maximum width for each product listing box. */
+    width: 280px; /* Adjust this width to control the size of the product column */
+    /* Remove any unnecessary large padding or margins that might be pushing the size. */
+    padding: 15px; 
+    margin: 10px;
+    
+    /* Ensure flex properties are set up for a horizontal layout (as suggested previously) */
+    flex-grow: 0;
+    flex-shrink: 0;
+    text-align: center;
+}
+
+/* 3. Ensure the list container allows horizontal flow */
+.ul ul {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: flex-start;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    gap: 20px;
+}
+
+/* 4. Style for the product name and price link */
+.ul ul li .direct a {
+    text-decoration: none;
+    color: #0F1111; /* Amazon's typical text color */
+    display: block; /* Make the whole link block clickable */
+}

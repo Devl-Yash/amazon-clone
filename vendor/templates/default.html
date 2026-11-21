@@ -1,0 +1,53 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AMAZON</title>
+    <link rel="stylesheet" href="{% static 'default.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <img class="back" src="{% static 'Untitled-6.webp' %}" alt="" >
+    <div class="main">
+        <header>
+            <div class="logo">
+                <img height="90" src="{% static 'amazon.webp' %}" alt="">
+            </div>
+            <div class="btn">
+                <div class="home">
+                    <a href="{% url 'default' %}" class="a"><i class="fa-solid fa-house"></i>Home</a>
+                </div>
+                <div class="vendor">
+                    <a href="{% url 'vendor' %}"  class="a">Vendor</a>
+                </div>
+                <div class="admin">
+                    <a href="{% url 'register' %}"  class="a"><i class="fa-solid fa-user"></i>Admin</a>
+                </div>
+            </div>
+        </header>
+    </div>
+    </div>
+
+    <div class="main">
+        <div class="ul">
+            <ul>
+                {% for i in user %}
+                    <li>
+                        <div class="direct">
+                            <a href="{% url 'details' i.pk %}">
+                        {{ i.name }}
+                        <img src="{{ i.image.url }}" alt="" class="phone">
+                        {{ i.price }}
+                            </a>
+                        </div>
+                    </li>
+                {% endfor %}
+            </ul>
+        </div>
+    </div>
+</body>
+</html>

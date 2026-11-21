@@ -1,0 +1,52 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Details of Product</title>
+    <link rel="stylesheet" href="{% static 'details.css' %}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css">
+</head>
+
+<body>
+    <div class="header">
+        <h1>Product Details</h1>
+        <a href="{% url 'default' %}"><i class="fa-solid fa-house"></i>
+            Home</a>
+    </div>
+    <div class="img">
+        <img src="{{ t.image.url }}" alt="">
+
+    </div>
+    <div class="name">
+        <li>{{ t.name }}</li>
+        <p>5K+ bought in past month</p>
+    </div>
+    <div class="p1">
+        Great Indian Festival
+    </div>
+    <div class="price">
+        <li> Rs. {{ t.price }}</li>
+    </div>
+
+    <div class="another">
+        <p>inclusive of all taxes</p>
+        <input type="radio" name="genre" value="With Exchange"> With Exchange
+    </div>
+
+    <div class="btn">
+        <button>Add to Cart</button>
+    </div>
+
+    <div class="btn2">
+        <button>Buy Now</button>
+    </div>
+
+    <div class="add">
+        <input type="radio" name="genre" value="gift"> Add Gift Option
+    </div>
+</body>
+
+</html>

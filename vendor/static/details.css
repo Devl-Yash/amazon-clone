@@ -1,0 +1,81 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+h1{
+    position: absolute;
+    margin: 10px 0px 0px 45% ;
+}
+
+a{
+    position: absolute;
+    margin: 20px 0px 30px 90% ;
+    text-decoration: none;
+}
+
+.img{
+    position: absolute;
+    margin: 80px 0px 0px 50px;
+}
+
+.name{
+    position: absolute;
+    margin: 150px 0px 0px 600px;
+    list-style: none;
+    padding-bottom: 20px;   
+    border-bottom:  1px solid black;
+}
+
+.p1{
+    position: absolute;
+    margin: 230px 0px 0px 600px;
+    background-color: rgb(151, 6, 6);
+    border-radius: 10px;
+    color: white;
+    padding: 10px;
+}
+
+.price{
+    position: absolute;
+    margin: 280px 0px 0px 600px;
+    font-size: large;
+    list-style: none;
+}
+
+.another p {
+    font-size:smaller;
+    padding-bottom: 40px;
+}
+
+.another{
+    position: absolute;
+    margin: 305px 0px 0px 600px;
+}
+
+.add{
+    position: absolute;
+    margin: 400px 0px 0px 600px;
+}
+
+.btn{
+    position: absolute;
+    margin: 250px 0px 0px 1300px;
+    padding: 10px 10px 10px 10px;
+}
+
+.btn2{
+    position: absolute;
+    margin: 300px 0px 0px 1310px;
+    padding: 30px 30px 30px 30px;   
+
+}
+
+button{
+    padding: 10px;
+}
