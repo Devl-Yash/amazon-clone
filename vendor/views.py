@@ -12,13 +12,15 @@ def default(request):
 
 def vendor(request):
     if request.method == 'POST':
-        form = formproduct(request.POST, request.FILES)  
+        form = formproduct(request.POST, request.FILES)
         if form.is_valid():
             form.save()
             return redirect('default')
-    else :
+        else:
+            print(form.errors)  # Shows the exact failing field in your terminal/Render logs
+    else:
         form = formproduct()
-    return render(request, 'vendor.html',{'form':form})
+    return render(request, 'vendor.html', {'form': form})
 
 def details(request, pk):
     t = get_object_or_404(product,pk = pk)
